@@ -4,9 +4,10 @@ metadata:
   name: nginx
   #namespace: myapp 
   labels:
-    app: dev
-    type: nginx
+    app: dev1
+    type: nginx1
 spec:
   containers:
     - name: nginx
       image: nginx
+   
