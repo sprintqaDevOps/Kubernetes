@@ -22,7 +22,7 @@ users:
   user:
     exec:
       apiVersion: client.authentication.k8s.io/v1alpha1
-      command: heptio-authenticator-aws
+      command: aws-iam-authenticator
       args:
         - "token"
         - "-i"
@@ -58,6 +58,6 @@ CONFIGMAPAWSAUTH
 }
 
 output "config-map-aws-auth" {
-value = local.config-map-aws-auth
+  value = local.config-map-aws-auth
 }
 

@@ -2,13 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-service
-  namespace: nginx
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
-    app: nginx
+    app: dev
   ports:
-      # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
+    # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
     - port: 80
       targetPort: 80
       # Optional field
