@@ -11,6 +11,8 @@ module "vpc" {
 
   enable_nat_gateway = false
   enable_vpn_gateway = false
+  enable_dns_hostnames = true
+  enable_dns_support = true
 
   tags = {
     "Name"                                      = "terraform-eks-demo-node"
