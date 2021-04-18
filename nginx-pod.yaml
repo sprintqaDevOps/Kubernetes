@@ -4,8 +4,7 @@ metadata:
   name: nginx
   #namespace: myapp 
   labels:
-    app: dev1
-    type: nginx1
+    run: nginx
 spec:
   containers:
     - name: nginx
