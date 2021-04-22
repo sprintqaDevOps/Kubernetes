@@ -9,9 +9,12 @@ spec:
     command: ["/bin/sh"]
     args: ["-c", "sleep 600"]
     volumeMounts:
-    - name: secret-volume
+    - name: mysql-config
       mountPath: /mydata
   volumes:
-  - name: secret-volume
-    secret:
-      secretName: secret-demo
+  - name: mysql-config
+    configMap:
+      name: mysql-demo-config
+      items:
+        - key: my.cnf
+          path: my.cnf

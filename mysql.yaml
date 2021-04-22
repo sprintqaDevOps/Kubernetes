@@ -25,3 +25,4 @@ spec:
     - name: my-pv
       persistentVolumeClaim:
         claimName: mysql-pv-claim
+
