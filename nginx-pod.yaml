@@ -6,6 +6,9 @@ metadata:
   labels:
     run: nginx
 spec:
+  nodeSelector:
+    #kubernetes.io/hostname: gke-sprintqa-my-k8s-3963f240-t2v6
+    sample: new_tag
   containers:
     - name: nginx
       image: nginx
