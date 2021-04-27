@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: quota-demo-mem
-  namespace: quota-demo-ns
+  namespace: quota
 spec:
   hard:
     limits.memory: "500Mi"
