@@ -13,13 +13,13 @@ alertmanager:
 # server:
 #   persistentVolume:
   
-  resources: 
-    limits:
-      cpu: 500m
-      memory: 512Mi
-    requests:
-      cpu: 500m
-      memory: 512Mi
+  # resources: 
+  #   limits:
+  #     cpu: 500m
+  #     memory: 512Mi
+  #   requests:
+  #     cpu: 500m
+  #     memory: 512Mi
 
 pushgateway:
   resources: 
