@@ -270,6 +270,10 @@ $ helm repo add stable https://kubernetes-charts.storage.googleapis.com
 $ helm repo update
 ```
 
+```
+$ kubectl create namespace prometheus
+```
+
 Deploy the prometheus Helm chart.
 
 Linux:
