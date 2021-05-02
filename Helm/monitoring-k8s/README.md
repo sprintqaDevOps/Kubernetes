@@ -277,7 +277,7 @@ Linux:
 ```
 $ helm install prometheus stable/prometheus \
     --namespace prometheus \
-    --values ./prometheus/values-prometheus.yaml \
+    --values ./prometheus/values-prometheus.yml \
     --version 11.1.1
 ```
 
@@ -286,7 +286,7 @@ Windows (PowerShell):
 ```
 PS> helm install prometheus stable/prometheus `
       --namespace prometheus `
-      --values .\prometheus\values-prometheus.yaml `
+      --values .\prometheus\values-prometheus.yml `
       --version 11.1.1
 ```
 
@@ -321,7 +321,7 @@ Linux:
 ```
 $ helm install grafana stable/grafana \
     --namespace grafana \
-    --values ./grafana/values-grafana.yaml \
+    --values ./grafana/values-grafana.yml \
     --version 5.0.13
 ```
 
@@ -330,7 +330,7 @@ Windows (PowerShell):
 ```
 PS> helm install grafana stable/grafana `
       --namespace grafana `
-      --values .\grafana\values-grafana.yaml `
+      --values .\grafana\values-grafana.yml `
       --version 5.0.13
 ```
 
