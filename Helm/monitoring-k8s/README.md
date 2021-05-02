@@ -9,11 +9,14 @@ A repository used for deploying Prometheus and Grafana on Azure AKS cluster.
 
 # Usage
 
-* [Deploy Azure Storage Class](#deploy-azure-storage-class)
-* [Deploy NGINX Ingress Controller](#deploy-nginx-ingress-controller)
-* [Deploy cert-manager](#deploy-cert-manager)
-* [Deploy prometheus](#deploy-prometheus)
-* [Deploy grafana](#deploy-grafana)
+- [monitoring-k8s](#monitoring-k8s)
+- [Usage](#usage)
+  - [Deploy Azure Storage Class](#deploy-azure-storage-class)
+  - [Deploy NGINX Ingress Controller](#deploy-nginx-ingress-controller)
+  - [Deploy cert-manager](#deploy-cert-manager)
+  - [Deploy Prometheus](#deploy-prometheus)
+  - [Deploy Grafana](#deploy-grafana)
+- [Acknowledgments](#acknowledgments)
 
 ## Deploy Azure Storage Class
 
@@ -72,7 +75,7 @@ customize and automate the deployment of an Ingress Controller.
 Make sure you have the stable repo added to your Helm client.
 
 ```
-$ helm repo add stable https://kubernetes-charts.storage.googleapis.com
+$ helm repo add stable https://charts.helm.sh/stable
 $ helm repo update
 ```
 
